@@ -1,0 +1,143 @@
+/*base styles*/
+
+
+    *{
+        box-sizing: border-box;
+        transition: .5s;
+    }
+
+    html, body{
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        font-family: 'DINPro', sans-serif;
+        font-size: 14px;
+
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .wrapper{
+        position: relative;
+        min-height: 100%;
+        width: 100%;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+
+        background-color: #fff;
+    }
+
+    .section{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .container{
+        width: 1140px;
+        max-width: 100%;
+        height: 100%;
+        margin: 0 auto;
+
+        @include monitor{
+            padding: 0 3%;
+        }
+    }
+
+    .button{
+        outline: none;
+        border:1px solid transparent;
+        border-radius: 111px;
+        background: transparent;
+        font-family: 'Gilroy';
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #222222;
+        letter-spacing: 0.02em;
+        transition: .4s;
+        padding-right: 32px;
+
+        cursor: pointer;
+
+        &:before{
+            content:'+';
+            display: inline-block;
+            vertical-align: middle;
+            color: #F47821; 
+
+            font-size: 32px;
+            line-height: 54px;
+            font-weight: 400;
+
+            background: rgba(#878787,0.05);
+            border-radius: 50%;
+
+            height: 54px;
+            width: 54px;
+            text-align: center;
+            margin-right: -13px;
+
+            transition: .4s;
+        }
+
+        &:hover{
+            background: rgba(135,135,135,.05);
+
+            &:before{
+                background-color:transparent;
+            }
+        }
+
+        &--submit{
+            width: 100%;
+            padding: 18px 0;
+            background: #FFFFFF;
+            font-size: 14px;
+            line-height: 17px;/* identical to box height */
+            letter-spacing: 0.04em;
+            color: #F47821;
+
+            &:before{
+                display:none;
+            }
+        }
+    }
+
+    .overflow{
+        overflow:hidden;
+    }
+
+    .title{
+        font-size: 40px;
+        color: #000000;
+        letter-spacing: -0.02em;
+
+        @include phones{
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+
+    .error{
+        color: red;
+        font-size: 20px;
+
+    }
+
+    input, textarea{
+        background-color: transparent !important;
+    }
+
+/*base end*/

@@ -1,0 +1,38 @@
+.similar{
+	margin-top: 83px;
+
+	&__wrapp{
+		height: 100%;
+		width: 100%;
+		padding: 0 16%;
+	}
+
+	&__title{
+		font-size: 48px;
+		line-height: 60px;
+		color: #222222;
+	    margin-bottom: 22px;
+		letter-spacing: -0.02em;
+	}
+
+	&__info{
+		font-family: Roboto;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 26px;
+		color: #4E4D53;
+		margin-bottom: 28px;
+
+		&:last-child{
+			margin-bottom:0;
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	.similar{
+		&__wrapp{
+			padding: 0 5%;
+		}
+	}
+}

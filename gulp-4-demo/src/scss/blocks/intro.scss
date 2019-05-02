@@ -1,0 +1,58 @@
+.intro{
+	text-align: center;
+	padding: 168px 0 121px;
+	background-color: #fff;
+
+	&__title{
+		margin-bottom: 20px;
+		font-size: 48px;
+		line-height: 54px;
+		letter-spacing: -0.02em;
+	}
+
+	&__info{
+		font-family: 'Roboto';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 26px;
+		color: #4A4556;
+		margin-bottom: 33px;
+
+		span{
+			color: #F47821;
+		}
+	}
+
+	&__button{
+		.button{
+			margin-left: 31px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px){
+	.intro{
+		padding: 120px 0;
+
+		&__title{
+			font-size: 36px;
+		}
+
+		&__info{
+			font-size: 14px;
+		}
+	}
+}
+
+@media screen and (max-width: 320px){
+	.intro{
+		&__title{
+			font-size: 30px;
+			line-height: 40px;
+		}
+
+		&__info{
+			font-size: 14px;
+		}
+	}
+}
